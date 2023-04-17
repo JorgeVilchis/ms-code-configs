@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: ROS Node",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/kineval_ros_ws/src/kineval_ros_pkg/scripts/kineval_node.py",
+            "console": "integratedTerminal",
+            "env": {
+                "ROS_MASTER_URI": "http://localhost:11311",
+                "ROS_PYTHON_LOG_CONFIG_FILE": "${workspaceFolder}/kineval_ros_ws/src/kineval_ros_pkg/config/logging.conf"
+            },
+            "envFile": "${workspaceFolder}/kineval_ros_ws/devel/setup.zsh"
+        }
+    ]
+}
